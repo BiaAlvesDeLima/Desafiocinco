@@ -1,0 +1,228 @@
+:root{
+  color: #D94A7E;
+}
+
+html{
+  font-family: sans-serif;
+}
+
+.maxwidth{
+  max-width: 90em;
+}
+
+header{
+  text-align: center;
+  margin: auto;
+}
+
+.header_logo{
+  width: 5.9em;
+  height: 100%;
+  margin: 1em;
+}
+
+.header_nav{
+  background-color: #F279B2;
+}
+
+ul{
+  margin: 0;
+}
+
+.header_nav ul{
+  list-style-type: none;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: .8em;
+}
+
+.header_nav a{
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+}
+
+.header_nav a:hover{
+  background-color: color-mix(in srgb, hotpink, white 20%);
+}
+
+@media screen and(max-width:48em){
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header_logo{
+    margin-left: 2em;
+  }
+  
+  .header_nav{
+    background-color: initial;
+  }
+  
+  .header_nav ul{
+    margin-right: 2em;
+    font-size: .9em;
+  }
+  
+  .header_nav li{
+    display: inline-block;
+  
+  }
+  .header_nav a{
+    color: #D94A7E;
+    border-radius: 5px;
+  }
+  
+  .header_nav a:hover{
+    background-color: color-mix(in srgb, hotpink, white 80%);
+  }
+}
+
+.trailer{
+  background-color: #F2D0D7;
+  padding-bottom: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  line-height: 1.5em;
+}
+
+.trailer div{
+  text-align: center;
+  margin: auto;
+}
+
+.trailer_title{
+  margin-top: 0;
+  padding-top: .5em;
+  color: #D94A7E;
+}
+
+.trailer_title h1{
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.trailer_paragrafo{
+  font-size: 1.1em;
+}
+
+.trailer_botao_article{
+  display: inline-block;
+  margin-top: 1em;
+  padding: 1em 2em;
+  background-color: #D94A7E;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.trailer_botao{
+  display: inline-block;
+  margin-top: 1em;
+  padding: 1em 2em;
+  background-color: #D94A7E;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.trailer_botao:hover{
+  background-color: color-mix(in srgb,hotpink, white 20%);
+}
+
+.trailer_video{
+  display: block;
+}
+
+@media screen and(max-width:48em){
+  
+  .trailer_botao{
+    display: block;
+  }
+  
+  .trailer{
+   background-size: cover;
+   background-position: center top;
+   background-repeat: no-repeat;
+   background-color: initial;
+   background-image: url(imagens/ceurosa.jpg);
+ }
+ 
+ .trailer_video{
+   display: none;
+ }
+ 
+ .trailer_paragrafo{
+   margin-bottom: 2em;
+ }
+}
+
+.main_content{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_content div{
+  margin: 1em;
+  padding: 1em;
+  width: 80%;
+}
+
+.main_content_title{
+  color: #D94A7E;
+  display: flex;
+  
+}
+
+.icon_img{
+  width: 5.5em;
+}
+
+article .icon_img:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+article .icon_img{
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.col{
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+.col-12{
+  width: 100%;
+}
+
+@media screen and(max-width:48em){
+  .col-6{
+    width: calc(50% - 2rem);
+  }
+}
+
+footer{
+  background-color: #D94A7E;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+.fonte{
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8em;
+}
